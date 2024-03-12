@@ -8,10 +8,3 @@ defineCalciteElements(window, {
 defineCustomElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.29/assets" });
 
 const mapElement = document.querySelector('arcgis-map');
-const featuresElement = document.querySelector("arcgis-features"); 
-mapElement.addEventListener('click',(event)=>{
-  featuresElement.open({
-    location: mapElement.toMap(event),
-    fetchFeatures: true
-  });
-});
