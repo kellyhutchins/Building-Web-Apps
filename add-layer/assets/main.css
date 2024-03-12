@@ -1,5 +1,5 @@
 @import 'https://js.arcgis.com/4.29/@arcgis/core/assets/esri/themes/light/main.css';
-@import "https://js.arcgis.com/calcite-components/2.4.0/calcite.css";
+
 html,
 body {
   background-color: var(--calcite-ui-foreground-2);
@@ -7,7 +7,4 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-}
-arcgis-map{
-  height:100%;
 }

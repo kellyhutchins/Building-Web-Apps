@@ -4,13 +4,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Map</title>
+  <title>Modify Web Map</title>
   <link rel="icon" href="data:;base64,=" />
 </head>
 
 <body>
-  <arcgis-map item-id="d5dda743788a4b0688fe48f43ae7beb9">
-  </arcgis-map>
+  <calcite-shell content-behind>
+    <calcite-shell-panel slot="panel-end" display-mode="float">
+      <calcite-panel>
+        <arcgis-features reference-element="arcgis-map"></arcgis-features>
+      </calcite-panel>
+    </calcite-shell-panel>
+    <calcite-panel>
+      <arcgis-map zoom="6" center="-120.74, 47.7511" item-id="cc5f66590815460895fd256cc1702a4c">
+      </arcgis-map>
+    </calcite-panel>
+  </calcite-shell>
   <script type="module" src="main.js"></script>
 </body>
 
