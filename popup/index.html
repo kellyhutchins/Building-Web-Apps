@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Popup</title>
+  <link rel="icon" href="data:;base64,=" />
+</head>
+
+<body>
+  <calcite-shell>
+    <calcite-shell-panel width-scale="l" slot="panel-end">
+      <calcite-panel heading="Click on map to select feature" class="features">
+        <arcgis-features reference-element="arcgis-map"></arcgis-features>
+      </calcite-panel>
+    </calcite-shell-panel>
+    <calcite-panel>
+      <arcgis-map popup-enabled="false" item-id="bcecad5bc4a5456bada1cd5e230bbf7f">
+      </arcgis-map>
+    </calcite-panel>
+  </calcite-shell>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
