@@ -38,20 +38,14 @@ document.querySelector("arcgis-map").addEventListener("arcgisViewReadyChange", (
   const mapElem = document.querySelector("arcgis-map");
 
   const tableElem = document.querySelector("arcgis-feature-table");
-  tableElem.addEventListener("arcgisOnReady", () => {
-    console.log("H")
-  })
+
   tableElem.addEventListener("arcgisReady", () => {
     const featureLayer = mapElem.map.layers.getItemAt(0);
     featureLayer.title = "USFS Recreational areas";
     tableElem.layer = featureLayer;
     tableElem.layerUrl = featureLayer.url;
   });
-  mapElem.addEventListener("arcgisViewReadyChange", async () => {
 
-    // tableElem.layerUrl = featureLayer.url;
-    //ss console.log("FL", featureLayer.url)
-  });
   mapElem.addEventListener("arcgisViewChange", () => {
     tableElem.filterGeometry = mapElem.extent;
   });
