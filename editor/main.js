@@ -3,8 +3,8 @@ import { defineCustomElements as defineCalciteElements } from "@esri/calcite-com
 import { defineCustomElements } from "@arcgis/map-components/dist/loader";
 
 defineCalciteElements(window, {
-  resourcesUrl: "https://js.arcgis.com/calcite-components/2.5.1/assets",
+  resourcesUrl: "https://js.arcgis.com/calcite-components/2.13.0/assets",
 });
-defineCustomElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.29/assets" });
+defineCustomElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.31/assets" });
 
 const mapElement = document.querySelector('arcgis-map');
