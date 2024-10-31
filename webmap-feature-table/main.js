@@ -41,7 +41,6 @@ document.querySelector("arcgis-map").addEventListener("arcgisViewReadyChange", (
     const featureLayer = mapElem.map.layers.getItemAt(0);
     featureLayer.title = "USFS Recreational areas";
     tableElem.layer = featureLayer;
-    console.log("URL", featureLayer.url);
   });
   mapElem.addEventListener("arcgisViewChange", () => {
     tableElem.filterGeometry = mapElem.extent;

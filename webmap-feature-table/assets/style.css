@@ -17,8 +17,12 @@ arcgis-map{
 .map-panel{
   flex:1;
 }
-.chart-panel{
+.table-panel{
   flex:1;
+ 
+}
+arcgis-feature-table{
+  height:100%;
 }
 #histogram{
  flex-grow:1;
