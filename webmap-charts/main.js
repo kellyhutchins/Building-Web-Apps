@@ -35,7 +35,7 @@ defineMapElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/
 /**
  * Use the Charts Components to define and lazy load the custom charts elements.
  */
-defineChartsElements(window, { resourcesUrl: "https://js.arcgis.com/charts-components/4.31/t9n" });
+defineChartsElements(window, { resourcesUrl: "https://js.arcgis.com/charts-components/4.30/t9n" });
 
 
 document.querySelector("arcgis-map").addEventListener("arcgisViewReadyChange", (event) => {
