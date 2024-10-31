@@ -1,0 +1,26 @@
+@import 'https://js.arcgis.com/4.31/@arcgis/core/assets/esri/themes/light/main.css';
+@import "https://js.arcgis.com/calcite-components/2.13.0/calcite.css";
+html,
+body {
+  display: flex;
+
+
+  background-color: var(--calcite-ui-foreground-2);
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+arcgis-map{
+  height:100%;
+}
+.map-panel{
+  flex:1;
+}
+.chart-panel{
+  flex:1;
+}
+#histogram{
+ flex-grow:1;
+}
+

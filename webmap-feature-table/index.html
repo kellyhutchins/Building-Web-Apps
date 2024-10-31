@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web map + Charts</title>
+</head>
+
+<body>
+  <calcite-shell>
+    <calcite-panel class="map-panel">
+      <arcgis-map id="map" item-id="56cb159275394410a2a928be9c6f5c2a">
+      </arcgis-map>
+    </calcite-panel>
+    <calcite-panel class="chart-panel">
+
+      <arcgis-feature-table reference-element="map"
+        layer-url="https://services.arcgis.com/V6ZHFr6zdgNZuVG0/arcgis/rest/services/CollegesUniversities/FeatureServer/0">
+      </arcgis-feature-table>
+
+    </calcite-panel>
+  </calcite-shell>
+
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
