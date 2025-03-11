@@ -5,7 +5,7 @@ import { getTimeSliderSettingsFromWebDocument } from "@arcgis/core/support/timeU
 defineCalciteElements(window, {
   resourcesUrl: "https://js.arcgis.com/calcite-components/2.13.0/assets",
 });
-defineCustomElements(window, { resourcesUrl: "https://js.arcgis.cßom/map-components/4.31/assets" });
+defineCustomElements(window, { resourcesUrl: "https://js.arcgis.com/map-components/4.31/assets" });
 
 const mapElement = document.querySelector('arcgis-map');
 
